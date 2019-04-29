@@ -25,4 +25,12 @@ public class RangersTest {
         Rangers testRanger = new Rangers("Jackie", "Gatwiri", 1);
         assertEquals(1, testRanger.getBadgeNo());
     }
+    @Test
+    public void equals_retursTrueNamesAndBadgeNumberAreTheSame_true(){
+        Rangers rangerOne = new Rangers("Jackie", "Gatwiri", 1);
+        Rangers rangerTwo = new Rangers("Jackie", "Gatwiri", 1);
+        assertTrue(rangerOne.equals(rangerTwo));
+    }
+
+
 }

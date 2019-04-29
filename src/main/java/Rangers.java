@@ -26,4 +26,16 @@ private int badgeNo;
     public int getBadgeNo() {
         return badgeNo;
     }
+
+    @Override
+    public boolean equals(Object otherRanger){
+        if(!(otherRanger instanceof Rangers )){
+            return false;
+        } else{
+            Rangers newRanger = (Rangers) otherRanger;
+            return this.getFirstName().equals(newRanger.getFirstName()) &&
+                    this.getSecondName().equals(newRanger.getSecondName()) &&
+                    this.getBadgeNo() == (newRanger.getBadgeNo());
+        }
+    }
 }
