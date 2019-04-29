@@ -1,7 +1,11 @@
+import org.junit.Rule;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class RangersTest {
+    @Rule
+    public DatabaseRule database = new DatabaseRule();
+
     @Test
     public void Rangers_instantiateCorrectly_true(){
         Rangers testRanger = new Rangers("Jackie", "Gatwiri", 1);
@@ -30,6 +34,12 @@ public class RangersTest {
         Rangers rangerOne = new Rangers("Jackie", "Gatwiri", 1);
         Rangers rangerTwo = new Rangers("Jackie", "Gatwiri", 1);
         assertTrue(rangerOne.equals(rangerTwo));
+    }
+    @Test
+    public void save_insertObjectIntoTheDatabase_Rangers(){
+        Rangers testRanger = new Rangers("Jackie", "Gatwiri", 1);
+        testRanger.save();
+        assertTrue(Rangers.all().get(0).equals(testRanger));
     }
 
 

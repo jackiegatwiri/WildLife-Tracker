@@ -1,3 +1,5 @@
+import org.sql2o.Connection;
+
 public class Rangers {
 private int id;
 private String firstName;
@@ -36,6 +38,19 @@ private int badgeNo;
             return this.getFirstName().equals(newRanger.getFirstName()) &&
                     this.getSecondName().equals(newRanger.getSecondName()) &&
                     this.getBadgeNo() == (newRanger.getBadgeNo());
+        }
+    }
+
+    public void save(){
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "INSERT INTO rangers(firstname, secondname, badgeno) VALUES (:firstname, :secondname, badgeno)";
+            con.createQuery(sql)
+            .addParameter("firstname", this.firstName)
+                    .addParameter("secondname", this.secondName)
+                    .addParameter("badgeno", this.badgeNo)
+                    .executeUpdate();
+
+
         }
     }
 }
