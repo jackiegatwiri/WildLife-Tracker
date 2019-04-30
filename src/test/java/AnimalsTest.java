@@ -54,5 +54,9 @@ public class AnimalsTest {
         secondAnimal.save();
         assertEquals(Animals.find(secondAnimal.getId()), secondAnimal);
     }
+    @Test
+    public void getsType_Not_Endangered() {
+        assertEquals("Not Endangered", Animals.getTYPE());
+    }
 
 }

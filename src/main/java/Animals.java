@@ -5,6 +5,8 @@ import java.util.List;
 public class Animals {
     public int id;
     public String name;
+    public static final String TYPE = "Not Endangered";
+
 
     public Animals(String name){
         this.name = name;
@@ -15,6 +17,10 @@ public class Animals {
     }
     public int getId(){
         return id;
+    }
+
+    public static String getTYPE(){
+        return TYPE;
     }
 
     @Override
@@ -29,17 +35,20 @@ public class Animals {
     }
     public void save(){
         try(Connection con = DB.sql2o.open()){
-            String sql = "INSERT INTO animals(name) VALUES (:name)";
+            String sql = "INSERT INTO animals(name, type) VALUES (:name, :type)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", this.name)
+                    .addParameter("type", TYPE)
                     .executeUpdate()
                     .getKey();
         }
     }
     public static List<Animals> all(){
-        String sql = "SELECT * FROM animals";
+        String sql = "SELECT * FROM animals where type = 'Not Endangered'";
         try(Connection con = DB.sql2o.open()){
-            return con.createQuery(sql).executeAndFetch(Animals.class);
+            return con.createQuery(sql)
+                    .throwOnMappingFailure(false)
+                    .executeAndFetch(Animals.class);
         }
 
     }
