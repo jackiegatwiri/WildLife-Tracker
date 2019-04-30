@@ -1,16 +1,20 @@
 import org.sql2o.Connection;
+import java.util.ArrayList;
+import java.util.List;
+import org.sql2o.*;
+
 
 public class Rangers {
 private int id;
-private String firstName;
-private String secondName;
-private int badgeNo;
+private String fname;
+private String sname;
+private String badge;
 
-    public Rangers(String firstName, String secondName, int badgeNo) {
+    public Rangers(String fname, String sname, String badge) {
         this.id = id;
-        this.firstName = firstName;
-        this.secondName = secondName;
-        this.badgeNo = badgeNo;
+        this.fname = fname;
+        this.sname = sname;
+        this.badge = badge;
     }
 
     public int getId() {
@@ -18,15 +22,15 @@ private int badgeNo;
     }
 
     public String getFirstName() {
-        return firstName;
+        return fname;
     }
 
     public String getSecondName() {
-        return secondName;
+        return sname;
     }
 
-    public int getBadgeNo() {
-        return badgeNo;
+    public String getBadgeNo() {
+        return badge;
     }
 
     @Override
@@ -37,20 +41,25 @@ private int badgeNo;
             Rangers newRanger = (Rangers) otherRanger;
             return this.getFirstName().equals(newRanger.getFirstName()) &&
                     this.getSecondName().equals(newRanger.getSecondName()) &&
-                    this.getBadgeNo() == (newRanger.getBadgeNo());
+                    this.getBadgeNo().equals(newRanger.getBadgeNo());
         }
     }
 
-    public void save(){
+    public void save() {
         try(Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO rangers(firstname, secondname, badgeno) VALUES (:firstname, :secondname, badgeno)";
+            String sql = "INSERT INTO rangers (fname, sname, badge) VALUES (:fname, :sname, :badge)";
             con.createQuery(sql)
-            .addParameter("firstname", this.firstName)
-                    .addParameter("secondname", this.secondName)
-                    .addParameter("badgeno", this.badgeNo)
+                    .addParameter("fname", this.fname)
+                    .addParameter("sname", this.sname)
+                    .addParameter("badge", this.badge)
                     .executeUpdate();
-
-
+        }
+    }
+    public static List<Rangers> all() {
+        String sql = "SELECT fname, sname, badge FROM rangers";
+        try(Connection con = DB.sql2o.open()) {
+            return con.createQuery(sql)
+                    .executeAndFetch(Rangers.class);
         }
     }
 }
