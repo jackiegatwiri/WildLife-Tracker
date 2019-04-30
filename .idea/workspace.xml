@@ -134,8 +134,8 @@
       <change beforePath="$PROJECT_DIR$/../Salon/src/main/java/Stylists.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Salon/src/main/java/Stylists.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Salon/src/main/resources/templates/stylist.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/../Salon/src/main/resources/templates/stylist.vtl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Salon/src/main/resources/templates/stylists.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/../Salon/src/main/resources/templates/stylists.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Animals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EndangeredAnimals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EndangeredAnimals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sighting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/index.html" afterDir="false" />
@@ -213,11 +213,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/EndangeredAnimals.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+            <state relative-caret-position="-146">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#280#281#0" expanded="true" />
@@ -235,11 +235,28 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Sighting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#325#326#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AnimalsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="852">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="750">
+              <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2052#2053#0" expanded="true" />
@@ -252,10 +269,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+            <state relative-caret-position="420">
+              <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2496#2497#0" expanded="true" />
+                <element signature="e#2567#2568#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -288,8 +307,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/DatabaseRule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="63" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="63" />
+            <state relative-caret-position="195">
+              <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -322,12 +341,13 @@
         <option value="$PROJECT_DIR$/src/test/java/RangersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Rangers.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.vtl" />
-        <option value="$PROJECT_DIR$/src/test/java/DatabaseRule.java" />
-        <option value="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/AnimalsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Animals.java" />
         <option value="$PROJECT_DIR$/src/main/java/EndangeredAnimals.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DatabaseRule.java" />
+        <option value="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Sighting.java" />
       </list>
     </option>
   </component>
@@ -344,7 +364,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="833" />
     <option name="y" value="25" />
     <option name="width" value="767" />
@@ -440,7 +460,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.AnimalsTest">
+  <component name="RunManager" selected="Gradle.EndangeredAnimalTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="WildlifeTracker.main" />
@@ -468,12 +488,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RangersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EndangeredAnimalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;RangersTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -530,11 +550,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.EndangeredAnimalTest" />
         <item itemvalue="Gradle.AnimalsTest" />
         <item itemvalue="Application.App" />
         <item itemvalue="Gradle.RangersTest.all_returnsAllInstancesOfRanger_true" />
         <item itemvalue="Gradle.RangersTest.save_insertsObjectIntoDatabase_Ranger" />
-        <item itemvalue="Gradle.RangersTest" />
       </list>
     </recent_temporary>
   </component>
@@ -552,15 +572,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RangersTest - 2019.04.29 at 20h 48m 11s.xml">
-      <configuration name="RangersTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="RangersTest - 2019.04.29 at 20h 51m 56s.xml">
-      <configuration name="RangersTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="RangersTest_save_insertsObjectIntoDatabase_Ranger - 2019.04.29 at 20h 52m 40s.xml">
-      <configuration name="RangersTest.save_insertsObjectIntoDatabase_Ranger" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="RangersTest_all_returnsAllInstancesOfRanger_true - 2019.04.29 at 20h 53m 32s.xml">
       <configuration name="RangersTest.all_returnsAllInstancesOfRanger_true" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -582,12 +593,21 @@
     <history-entry file="AnimalsTest - 2019.04.30 at 16h 23m 03s.xml">
       <configuration name="AnimalsTest" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="AnimalsTest - 2019.04.30 at 16h 41m 22s.xml">
+      <configuration name="AnimalsTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="EndangeredAnimalTest - 2019.04.30 at 16h 42m 01s.xml">
+      <configuration name="EndangeredAnimalTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="EndangeredAnimalTest - 2019.04.30 at 16h 42m 32s.xml">
+      <configuration name="EndangeredAnimalTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1533" height="875" extended-state="6" />
+    <frame x="833" y="25" width="767" height="875" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3855756" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.79472953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -601,7 +621,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49966374" visible="true" weight="0.4691689" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49966374" weight="0.4691689" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003362" side_tool="true" weight="0.7841823" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.33064517" />
@@ -705,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Sighting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -806,16 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DatabaseRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="63" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -825,18 +828,6 @@
             <element signature="e#480#496#0" expanded="true" />
             <element signature="e#752#768#0" expanded="true" />
             <element signature="e#1032#1048#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AnimalsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2052#2053#0" expanded="true" />
-            <element signature="e#2117#2118#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -859,20 +850,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DatabaseRule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        <state relative-caret-position="195">
+          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2496#2497#0" expanded="true" />
+            <element signature="e#2567#2568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AnimalsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2052#2053#0" expanded="true" />
+            <element signature="e#2117#2118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EndangeredAnimals.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+        <state relative-caret-position="-146">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#280#281#0" expanded="true" />
@@ -885,6 +900,21 @@
             <element signature="e#430#431#0" expanded="true" />
             <element signature="e#564#565#0" expanded="true" />
             <element signature="e#591#592#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Sighting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
           </folding>
         </state>
       </provider>

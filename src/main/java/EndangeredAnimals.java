@@ -36,7 +36,10 @@ public class EndangeredAnimals extends Animals {
             return false;
         } else {
             EndangeredAnimals newAnimals = (EndangeredAnimals) otherAnimal;
-            return this.getName().equals(newAnimals.getName());
+            return this.getName().equals(newAnimals.getName()) &&
+                    this.getHealth().equals(newAnimals.getHealth()) &&
+            this.getAge().equals(newAnimals.getAge()) &&
+            this.getTYPE().equals(newAnimals.getTYPE());
         }
     }
     public void save(){

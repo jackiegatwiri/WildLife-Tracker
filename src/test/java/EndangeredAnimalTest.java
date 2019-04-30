@@ -19,6 +19,16 @@ public class EndangeredAnimalTest {
         assertEquals("Bubbles", testAnimal.getName());
     }
     @Test
+    public void Animals_instantiatesWithHealth_String() {
+        EndangeredAnimals  testAnimal = new EndangeredAnimals ("Bubbles" ,"okay", "20" );
+        assertEquals("okay", testAnimal.getHealth());
+    }
+    @Test
+    public void Animals_instantiatesWithAge_String() {
+        EndangeredAnimals  testAnimal = new EndangeredAnimals ("Bubbles" ,"okay", "20" );
+        assertEquals("20", testAnimal.getAge());
+    }
+    @Test
     public void equals_returnsTrueIfTheNamesAreEqual_true(){
         EndangeredAnimals  firstAnimal = new EndangeredAnimals ("Bubbles" ,"okay", "20" );
         EndangeredAnimals  secondAnimal = new EndangeredAnimals ("Bubbles" ,"okay", "20" );
