@@ -47,7 +47,7 @@ public class Animals {
         String sql = "SELECT * FROM animals where type = 'Not Endangered'";
         try(Connection con = DB.sql2o.open()){
             return con.createQuery(sql)
-                    .throwOnMappingFailure(false)
+                    .throwOnMappingFailure(false) //throw an exception to tell database not to return the fiels that it is not using
                     .executeAndFetch(Animals.class);
         }
 
