@@ -1,21 +1,26 @@
 <div class="container">
+    <div class="content">
     <div class="text">
-        <p class="head">Add a new Ranger:</p>
-
+        <div class="ranger">
+        <h1 class="head">Add a new Ranger:</h1>
+        </div>
         <form action="/rangers" method="post">
             <div class="form-group">
-                <label for="fname">Enter Your First Name</label>
+                <label for="fname">Enter First Name</label>
                 <input id="fname" name="fname" type="text" class="form-control" placeholder="First Name"> <br>
 
-                <label for="sname">Enter Your Second Name</label>
+                <label for="sname">Enter Second Name</label>
                 <input id="sname" name="sname" type="text" class="form-control" placeholder="Second Name"> <br>
 
 
-                <label for="badge">Enter Your Badge Number</label>
+                <label for="badge">Enter Badge Number</label>
                 <input id="badge" name="badge" type="number" class="form-control" placeholder="Badge Number"> <br>
 
+                <div class="button">
                 <button id="stylistButton" type="submit" class="btn btn-primary" >Add Ranger</button>
+                </div>
             </div>
         </form>
+    </div>
     </div>
 </div>

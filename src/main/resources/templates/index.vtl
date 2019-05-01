@@ -1,14 +1,41 @@
-#foreach($ranger in $rangers)
-<p> $ranger.getFirstName() </p>
+<div class="container">
+    <div class="left-content">
+        <div>
+            <h1>RESPONDING TO EMERGING CRISIS</h1>
+            <h3>Collaborating with all sectors of the society to change the course of history</h3>
+        </div>
+    </div>
+    <div class="card-deck">
+        #foreach($ranger in $rangers)
+        <div class="card testimonial-card mb-4">
+            <div class="view overlay card-up indigo lighten-1">
+                <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle" alt="woman avatar">
+                </div>
+                <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Name: $ranger.getFirstName() $ranger.getSecondName()</h4>
+                <p class="card-text">Badge Number: $ranger.getBadgeNo()</p>
+                <a href="/rangers/$ranger.getId()" class="btn btn-light-blue btn-md">View Details</a>
+            </div>
 
-<p> $ranger.getSecondName()</p>
-<p> $ranger.getBadgeNo()</p>
-$ranger.getId()
+        </div>
 
-<a href="/rangers/$ranger.getId()"> Details</a>
-
-
-#end
-
-
+        #end
+    </div>
+</div>
+<div class="button">
 <a href="/rangers/new" class="btn btn-secondary">Add a New Ranger</a>
+</div>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+body{
+  background-image: url("photos/pic4.jpg");
+}
+.card{
+margin-top: 4em;
+width:20%;
+height:20%;
+}
+.left-content{
+color:white;
+margin-top: 15em;
+text-align:center;
+}
+.button{
+text-align:center;
+margin-top: 4em;
+}
+.ranger{
+color:white;
+margin-top: 15em;
+text-align:center;
+font-family: 'Wendy One', sans-serif;
+}
+.content{
+color:white;
+}

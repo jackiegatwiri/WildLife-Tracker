@@ -1,9 +1,27 @@
-#foreach($sighting in $sightings)
-<tr>
-    <th>$sighting.getId()</th>
-    <td>$sighting.getAnimalId()</td>
-    <td>$sighting.getLocation()</td>
-    <td>$sighting.getRangerName()</td>
+<div class="container left-content">
+    <h1>ALL SIGHTINGS</h1>
+        <table class="table table-dark">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Animal ID</th>
+                <th scope="col">Location</th>
+                <th scope="col">Ranger's Name</th>
 
-</tr>
-#end
+            </tr>
+            </thead>
+            <tbody>
+            #foreach($sighting in $sightings)
+            <tr>
+                <th>$sighting.getId()</th>
+                <td>$sighting.getAnimalId()</td>
+                <td>$sighting.getLocation()</td>
+                <td>$sighting.getRangerName()</td>
+
+            </tr>
+            #end
+            </tbody>
+        </table>
+    <a href="/sightingForm/new" class="btn btn-secondary button">Add Sighting</a>
+    <a href="/animalForm/new" class="btn btn-secondary button" >Add Animal</a>
+    </div>

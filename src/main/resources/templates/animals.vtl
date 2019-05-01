@@ -1,21 +1,41 @@
-#foreach($animal in $animals)
-<tr>
-    <th scope="row">$animal.getId()</th>
-    <td>$animal.getName()</td>
-    <td>Null</td>
-    <td>$animal.getTYPE()</td>
-    <td>Null</td>
-</tr>
-#end
+<div class="conainer">
+<div class="left-content">
+<h1>ALL ANIMALS</h1>
 
+<table class="table table-dark">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Animal Name</th>
+        <th scope="col">Health</th>
+        <th scope="col">Type</th>
+        <th scope="col">Age</th>
+    </tr>
+    </thead>
+    <tbody>
+    #foreach($animal in $animals)
+    <tr>
+        <th scope="row">$animal.getId()</th>
+        <td>$animal.getName()</td>
+        <td>Null</td>
+        <td>$animal.getTYPE()</td>
+        <td>Null</td>
+    </tr>
+    #end
 
+    #foreach($endangeredAnimal in $endangeredAnimals)
+    <tr>
+        <th scope="row">$endangeredAnimal.getId()</th>
+        <td>$endangeredAnimal.getName()</td>
+        <td>$endangeredAnimal.getHealth()</td>
+        <td>$endangeredAnimal.getTYPE()</td>
+        <td>$endangeredAnimal.getAge()</td>
+    </tr>
+    #end
+    </tbody>
+</table>
+    <a href="/sightingForm/new" class="btn btn-secondary button">Add Sighting</a>
+    <a href="/animalForm/new" class="btn btn-secondary button" >Add Animal</a>
+</div>
+</div>
 
-#foreach($endangeredAnimal in $endangeredAnimals)
-<tr>
-    <th scope="row">$endangeredAnimal.getId()</th>
-    <td>$endangeredAnimal.getName()</td>
-    <td>$endangeredAnimal.getHealth()</td>
-    <td>$endangeredAnimal.getTYPE()</td>
-    <td>$endangeredAnimal.getAge()</td>
-</tr>
-#end
