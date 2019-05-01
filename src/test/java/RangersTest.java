@@ -58,4 +58,13 @@ public class RangersTest {
         assertEquals(true, Rangers.all().get(0).equals(firstPerson));
         assertEquals(true, Rangers.all().get(1).equals(secondPerson));
     }
+
+    @Test
+    public void find_returnsAnimalWithSameId_secondAnimal() {
+        Rangers firstPerson = new Rangers("Jackie", "Gatwiri", "1");
+        firstPerson.save();
+        Rangers secondPerson = new Rangers("Jill", "Bates","2");
+        secondPerson.save();
+        assertEquals(Rangers.find(secondPerson.getId()), secondPerson);
+    }
 }

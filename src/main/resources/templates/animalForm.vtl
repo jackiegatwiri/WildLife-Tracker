@@ -1,0 +1,29 @@
+<form action="/animals" method="post">
+    <label for="name">Select Animal:</label>
+    <select id="name" name="name" class="form-control" placeholder="Name" >
+        <option value="lion">Lion</option>
+        <option value="rhino">Rhino</option>
+        <option value="cheetah">Cheetah</option>
+    </select>
+
+
+    <input type="checkbox" class="form-check-input" id="endangeredInput" name="endangeredInput">
+    <label class="form-check-label" for="endangeredInput">Endangered?</label>
+
+    <label for="health">Choose Status:</label>
+    <select id="health" name="health" class="form-control" >
+        <option value="healthy">Healthy</option>
+        <option value="okay">Okay</option>
+        <option value="ill">Ill</option>
+    </select>
+
+    <label for="age">Choose Age:</label>
+    <select id="age" name="age" class="form-control" >
+        <option value="newborn">NewBorn</option>
+        <option value="young">Young</option>
+        <option value="old">Old</option>
+    </select>
+
+    <button type="submit" class="btn btn-primary">Add Animal</button>
+
+</form>

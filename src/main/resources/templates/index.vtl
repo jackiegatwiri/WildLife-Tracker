@@ -1,10 +1,14 @@
 #foreach($ranger in $rangers)
 <p> $ranger.getFirstName() </p>
+
 <p> $ranger.getSecondName()</p>
 <p> $ranger.getBadgeNo()</p>
+$ranger.getId()
+
+<a href="/rangers/$ranger.getId()"> Details</a>
 
 
 #end
 
 
-<a href="/rangers/new" class="btn btn-secondary">Create New Ranger</a>
+<a href="/rangers/new" class="btn btn-secondary">Add a New Ranger</a>

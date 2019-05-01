@@ -11,7 +11,7 @@ private String sname;
 private String badge;
 
     public Rangers(String fname, String sname, String badge) {
-        this.id = id;
+//        this.id = id;
         this.fname = fname;
         this.sname = sname;
         this.badge = badge;
@@ -48,18 +48,29 @@ private String badge;
     public void save() {
         try(Connection con = DB.sql2o.open()) {
             String sql = "INSERT INTO rangers (fname, sname, badge) VALUES (:fname, :sname, :badge)";
-            con.createQuery(sql)
+            this.id = (int) con.createQuery(sql, true)
                     .addParameter("fname", this.fname)
                     .addParameter("sname", this.sname)
                     .addParameter("badge", this.badge)
-                    .executeUpdate();
+                    .executeUpdate()
+            .getKey();
         }
     }
     public static List<Rangers> all() {
-        String sql = "SELECT fname, sname, badge FROM rangers";
+        String sql = "SELECT id, fname, sname, badge FROM rangers";
         try(Connection con = DB.sql2o.open()) {
             return con.createQuery(sql)
                     .executeAndFetch(Rangers.class);
+        }
+    }
+
+    public static Rangers find(int id) {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "SELECT * FROM rangers where id=:id";
+            Rangers rangers = con.createQuery(sql)
+                    .addParameter("id", id)
+                    .executeAndFetchFirst(Rangers.class);
+            return rangers;
         }
     }
 }

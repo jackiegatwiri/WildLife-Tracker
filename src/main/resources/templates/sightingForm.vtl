@@ -1,0 +1,29 @@
+<form action="/sightings" method="post">
+    <label for="name">Enter Name:</label>
+    <input  name="name" id="name" placeholder="name"  aria-placeholder="Name" class="form-control">
+
+    <label for="animalId">Select Animal:</label>
+    <select id="animalId" name="animalId" class="form-control">
+        #foreach($animal in $animals)
+        <option value="$animal.getId()">$animal.getName()</option>
+        #end
+
+        #foreach($endangeredAnimal in $endangeredAnimals)
+        <option value="$endangeredAnimal.getId()">$endangeredAnimal.getName()</option>
+        #end
+    </select>
+
+
+    <label for="location">Select Location:</label>
+
+    <select id="location" name="location" class="form-control" >
+        <option value="Zone A">Zone A</option>
+        <option value="Zone B">Zone B</option>
+        <option value="Zone C">Zone C</option>
+        <option value="Zone D">Zone D</option>
+        <option value="Near The River">Near The River</option>
+    </select>
+
+    <button type="submit" class="btn btn-primary">Record</button>
+
+</form>
