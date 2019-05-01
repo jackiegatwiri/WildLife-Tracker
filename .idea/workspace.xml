@@ -134,7 +134,6 @@
       <change beforePath="$PROJECT_DIR$/../Salon/src/main/java/Stylists.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Salon/src/main/java/Stylists.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Salon/src/main/resources/templates/stylist.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/../Salon/src/main/resources/templates/stylist.vtl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Salon/src/main/resources/templates/stylists.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/../Salon/src/main/resources/templates/stylists.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/index.html" afterDir="false" />
@@ -228,20 +227,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
+            <state relative-caret-position="585">
               <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/app.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+            <state relative-caret-position="17">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#822#838#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -292,7 +295,6 @@
         <option value="$PROJECT_DIR$/src/test/java/SightingTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Rangers.java" />
         <option value="$PROJECT_DIR$/src/test/java/RangersTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/sightingForm.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/ranger.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.vtl" />
@@ -303,6 +305,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/animals.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/sightings.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" />
+        <option value="$PROJECT_DIR$/src/main/java/App.java" />
       </list>
     </option>
   </component>
@@ -578,7 +581,7 @@
   <component name="ToolWindowManager">
     <frame x="833" y="25" width="767" height="875" extended-state="4" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.9583053" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.9570042" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24965326" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -647,7 +650,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/App.java</url>
-          <line>20</line>
+          <line>27</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -816,17 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#822#838#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -892,8 +884,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
+        <state relative-caret-position="585">
           <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#822#838#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

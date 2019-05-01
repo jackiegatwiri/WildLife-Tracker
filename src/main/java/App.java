@@ -20,7 +20,7 @@ public class App {
         } else {
             port = 4567;
         }
-        setPort(port);
+        port(port);
 
         get("/", (request, response) -> {
             Map<String, Object>model = new HashMap<String, Object>();
