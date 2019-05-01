@@ -1,10 +1,10 @@
 # Wild Life Tracker Application
 ## Description
 
-![](screenshot/pic1.png)
-![](screenshot/pic2.png)
-![](screenshot/pic3.png)
-![](screenshot/pic4.png)
+![](screenshots/pic1.png)
+![](screenshots/pic2.png)
+![](screenshots/pic3.png)
+![](screenshots/pic4.png)
 
 
 ```
