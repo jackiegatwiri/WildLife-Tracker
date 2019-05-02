@@ -1,5 +1,7 @@
 import org.sql2o.Connection;
 
+import java.sql.Timestamp;
+import java.text.DateFormat;
 import java.util.List;
 
 public class Sighting {
@@ -7,6 +9,7 @@ public class Sighting {
     private String location;
     private String rangerName;
     private int id;
+    private Timestamp date;
 
     public Sighting(int animalId, String location, String rangerName) {
         this.animalId = animalId;
@@ -29,6 +32,10 @@ public class Sighting {
         return id;
     }
 
+    public String getDate(){
+        return DateFormat.getDateTimeInstance().format(date);
+    }
+
     @Override
     public boolean equals(Object otherSighting){
         if(!(otherSighting instanceof Sighting)){
@@ -45,7 +52,7 @@ public class Sighting {
     }
     public void save(){
         try(Connection con = DB.sql2o.open()){
-            String sql = "INSERT INTO sightings(animalid, location, rangername) VALUES (:animalid, :location, :rangername)";
+            String sql = "INSERT INTO sightings(animalid, location, rangername, date) VALUES (:animalid, :location, :rangername, now())";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("animalid", this.animalId)
                     .addParameter("location", this.location)
